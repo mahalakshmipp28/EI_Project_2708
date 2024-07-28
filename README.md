@@ -58,6 +58,7 @@ This application uses the following design patterns and OOP concepts:
 **createTask:** Creates a new task with the given description, start time, end time, and priority.
 
 **Usage**
+
 To use the application, simply run the Main class. The application will prompt you to choose an action:
 1. Add task
 2. Remove task
