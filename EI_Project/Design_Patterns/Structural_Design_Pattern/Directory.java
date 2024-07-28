@@ -1,4 +1,4 @@
-/*2. Composite Pattern
+/*1. Composite Pattern
 Use Case: File System
 In this system, we have a file system that consists of files and directories. 
 We want to treat both files and directories as a single unit, 
