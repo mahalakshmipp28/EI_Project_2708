@@ -1,4 +1,4 @@
-**DESIGN PATTERNS**
+**EXERCISE 1 - DESIGN PATTERNS**
 
 **BEHAVIORAL DESIGN PATTERNS**
 
@@ -42,7 +42,7 @@ In this system, we have a file system that consists of files and directories. We
 
 In this system, we have an old printer that only supports printing text files, but we want to print PDF files as well. We can create an adapter that converts the PDF file to a text file, allowing us to print it using the old printer.
 
-**Astronaut Daily Schedule Organizer**
+**EXERCISE 2 - Astronaut Daily Schedule Organizer**
 
 **Problem Statement :**
 
