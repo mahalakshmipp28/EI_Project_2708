@@ -1,4 +1,4 @@
-/*1. Adapter Pattern
+/*2. Adapter Pattern
 Use Case: Old Printer Adapter
 In this system, we have an old printer that only supports printing text files, 
 but we want to print PDF files as well. 
