@@ -17,11 +17,15 @@ This application uses the following design patterns and OOP concepts:
 
 **ScheduleManager**
 
-**Constructor:** Initializes the schedule manager with an empty list of tasks and a task factory.
-**addTask:** Adds a new task to the schedule. Checks for conflicts with existing tasks and notifies the user if a conflict is found.
-**removeTask:** Removes a task from the schedule. Notifies the user if the task is not found.
-**viewTasks:** Displays all tasks in the schedule, sorted by start time.
-**main:** The main method that runs the application. It creates a schedule manager and a scanner to read user input.
+**1. Constructor:** Initializes the schedule manager with an empty list of tasks and a task factory.
+
+**2. addTask:** Adds a new task to the schedule. Checks for conflicts with existing tasks and notifies the user if a conflict is found.
+
+**3. removeTask:** Removes a task from the schedule. Notifies the user if the task is not found.
+
+**4. viewTasks:** Displays all tasks in the schedule, sorted by start time.
+
+**5. main:** The main method that runs the application. It creates a schedule manager and a scanner to read user input.
 
 **Task**
 
