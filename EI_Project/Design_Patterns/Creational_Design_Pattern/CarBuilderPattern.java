@@ -1,3 +1,9 @@
+/*2. Builder Pattern
+Use Case: Car Manufacturing
+In this system, we have a car manufacturer that produces different types of cars 
+(e.g., sedan, SUV, and truck). 
+We want to create a builder that constructs a car step-by-step, allowing us to customize the car's features.*/
+
 import java.util.Scanner;
 
 // Product (Car)
