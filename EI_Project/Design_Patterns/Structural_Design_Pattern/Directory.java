@@ -1,3 +1,9 @@
+/*2. Composite Pattern
+Use Case: File System
+In this system, we have a file system that consists of files and directories. 
+We want to treat both files and directories as a single unit, 
+allowing us to perform operations on them uniformly.*/
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
