@@ -1,4 +1,4 @@
-/*2. Builder Pattern
+/*1. Builder Pattern
 Use Case: Car Manufacturing
 In this system, we have a car manufacturer that produces different types of cars 
 (e.g., sedan, SUV, and truck). 
