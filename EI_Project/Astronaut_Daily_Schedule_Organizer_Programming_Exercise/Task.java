@@ -32,15 +32,19 @@ public class Task {
         int startMinute = Integer.parseInt(startTime.split(":")[1]);
         int endHour = Integer.parseInt(endTime.split(":")[0]);
         int endMinute = Integer.parseInt(endTime.split(":")[1]);
-
+    
         int otherStartHour = Integer.parseInt(otherTask.startTime.split(":")[0]);
         int otherStartMinute = Integer.parseInt(otherTask.startTime.split(":")[1]);
         int otherEndHour = Integer.parseInt(otherTask.endTime.split(":")[0]);
         int otherEndMinute = Integer.parseInt(otherTask.endTime.split(":")[1]);
-
-        if (startHour < otherEndHour && endHour > otherStartHour) {
-            return true;
-        }
-        return false;
+    
+        // Convert time to minutes for easier comparison
+        int startMinutes = startHour * 60 + startMinute;
+        int endMinutes = endHour * 60 + endMinute;
+        int otherStartMinutes = otherStartHour * 60 + otherStartMinute;
+        int otherEndMinutes = otherEndHour * 60 + otherEndMinute;
+    
+        // Check for overlap
+        return (startMinutes < otherEndMinutes && endMinutes > otherStartMinutes);
     }
 }
