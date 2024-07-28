@@ -1,3 +1,9 @@
+/*2. Strategy Pattern
+Use Case: Payment Gateway
+In this system, we have a payment gateway that supports multiple payment methods 
+(e.g., credit card, PayPal, and bank transfer). 
+We want to decouple the payment method from the payment processor to make it easier to add new payment methods in the future.*/
+
 import java.util.Scanner;
 
 // Strategy (Payment Method)
