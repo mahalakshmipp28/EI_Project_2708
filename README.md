@@ -11,6 +11,7 @@ In this system, we have a payment gateway that supports multiple payment methods
 **Output:**
 
 ![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Payment_Gateway_1.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Payment_Gateway_2.png?raw=true)
 
 **2. Observer Pattern**
 
