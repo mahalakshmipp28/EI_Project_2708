@@ -1,4 +1,4 @@
-/* 1. Observer Pattern
+/* 2. Observer Pattern
 Use Case: Weather Forecast System
 In this system, we have a weather station that continuously monitors the temperature, 
 humidity, and wind speed. We want to notify multiple displays 
