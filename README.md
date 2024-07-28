@@ -1,3 +1,47 @@
+**DESIGN PATTERNS**
+
+**BEHAVIORAL DESIGN PATTERNS**
+
+**1. Strategy Pattern**
+
+**Use Case: Payment Gateway**
+
+In this system, we have a payment gateway that supports multiple payment methods (e.g., credit card, PayPal, and bank transfer). We want to decouple the payment method from the payment processor to make it easier to add new payment methods in the future.
+
+**2. Observer Pattern**
+
+**Use Case: Weather Forecast System**
+
+In this system, we have a weather station that continuously monitors the temperature, humidity, and wind speed. We want to notify multiple displays (e.g., mobile app, website, and digital signage) whenever the weather conditions change.
+
+**CREATIONAL DESIGN PATTERNS**
+
+**1. Builder Pattern**
+
+**Use Case: Car Manufacturing**
+
+In this system, we have a car manufacturer that produces different types of cars (e.g., sedan, SUV, and truck). We want to create a builder that constructs a car step-by-step, allowing us to customize the car's features.
+
+**2. Factory Method Pattern**
+
+**Use Case: Document Reader**
+
+In this system, we have a document reader that supports multiple file formats (e.g., PDF, DOCX, and TXT). We want to create a factory method that returns a concrete document reader based on the file format.
+
+**STRUCTURAL DESIGN PATTERNS**
+
+**1. Composite Pattern**
+
+**Use Case: File System**
+
+In this system, we have a file system that consists of files and directories. We want to treat both files and directories as a single unit, allowing us to perform operations on them uniformly.
+
+**2. Adapter Pattern**
+
+**Use Case: Old Printer Adapter**
+
+In this system, we have an old printer that only supports printing text files, but we want to print PDF files as well. We can create an adapter that converts the PDF file to a text file, allowing us to print it using the old printer.
+
 **Astronaut Daily Schedule Organizer**
 
 **Problem Statement :**
