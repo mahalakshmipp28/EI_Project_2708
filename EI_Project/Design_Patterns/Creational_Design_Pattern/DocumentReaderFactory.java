@@ -1,3 +1,9 @@
+/*1. Factory Method Pattern
+Use Case: Document Reader
+In this system, we have a document reader that supports multiple file formats 
+(e.g., PDF, DOCX, and TXT). 
+We want to create a factory method that returns a concrete document reader based on the file format.*/
+
 import java.util.Scanner;
 
 // Product (Document Reader)
