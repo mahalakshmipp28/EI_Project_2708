@@ -1,3 +1,9 @@
+/*1. Adapter Pattern
+Use Case: Old Printer Adapter
+In this system, we have an old printer that only supports printing text files, 
+but we want to print PDF files as well. 
+We can create an adapter that converts the PDF file to a text file, allowing us to print it using the old printer.*/
+
 import java.util.Scanner;
 
 // Target (Printer)
