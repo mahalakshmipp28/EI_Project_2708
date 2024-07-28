@@ -10,9 +10,9 @@ In this system, we have a payment gateway that supports multiple payment methods
 
 **Output:**
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Payment_Gateway_1.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Payment_Gateway_1.png?raw=true)
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Payment_Gateway_2.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Payment_Gateway_2.png?raw=true)
 
 **2. Observer Pattern**
 
@@ -22,7 +22,7 @@ In this system, we have a weather station that continuously monitors the tempera
 
 **Output:**
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Weather_Forecast_1.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Weather_Forecast_1.png?raw=true)
 
 **CREATIONAL DESIGN PATTERNS**
 
@@ -34,9 +34,9 @@ In this system, we have a car manufacturer that produces different types of cars
 
 **Output:**
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Car_Manufacturing_1.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Car_Manufacturing_1.png?raw=true)
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Car_Manufacturing_2.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Car_Manufacturing_2.png?raw=true)
 
 **2. Factory Method Pattern**
 
@@ -46,7 +46,7 @@ In this system, we have a document reader that supports multiple file formats (e
 
 **Output:**
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Document_Reader_1.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Document_Reader_1.png?raw=true)
 
 **STRUCTURAL DESIGN PATTERNS**
 
@@ -58,9 +58,9 @@ In this system, we have a file system that consists of files and directories. We
 
 **Output:**
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/File_Systems_1.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/File_Systems_1.png?raw=true)
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/File_Systems_2.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/File_Systems_2.png?raw=true)
 
 **2. Adapter Pattern**
 
@@ -70,9 +70,9 @@ In this system, we have an old printer that only supports printing text files, b
 
 **Output:**
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Old_Printer_Adapter_1.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Old_Printer_Adapter_1.png?raw=true)
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Old_Printer_Adapter_2.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Old_Printer_Adapter_2.png?raw=true)
 
 **EXERCISE 2 - Astronaut Daily Schedule Organizer**
 
@@ -145,8 +145,8 @@ Follow the prompts to add, remove, or view tasks.
 
 **Output:**
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Schedule_Organiser_1.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Schedule_Organiser_1.png?raw=true)
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Schedule_Organiser_2.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Schedule_Organiser_2.png?raw=true)
 
-![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Schedule_Organiser_3.png?raw=true)
+![image_alt](https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/EI_Project/Output_Screenshots/Schedule_Organiser_3.png?raw=true)
