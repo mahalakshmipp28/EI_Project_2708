@@ -5,13 +5,19 @@ Design Patterns and OOP Concepts
 
 This application uses the following design patterns and OOP concepts:
 
-**Singleton Pattern:** The ScheduleManager class is a singleton, ensuring that there is only one instance of the schedule manager.
-**Factory Pattern:** The TaskFactory class is a factory that creates Task objects.
-**Observer Pattern:** The ScheduleManager class notifies users of task conflicts or updates.
-**Encapsulation:** Each class encapsulates its own data and behavior, making it easier to modify and extend the code.
-**Abstraction:** The Task class abstracts away the details of a task, making it easier to work with tasks without worrying about their implementation.
-**Inheritance:** Not used in this application, but could be used to create subclasses of Task for specific types of tasks.
-**Polymorphism:** Not used in this application, but could be used to create methods that can work with different types of tasks.
+**1. Singleton Pattern:** The ScheduleManager class is a singleton, ensuring that there is only one instance of the schedule manager.
+
+**2. Factory Pattern:** The TaskFactory class is a factory that creates Task objects.
+
+**3. Observer Pattern:** The ScheduleManager class notifies users of task conflicts or updates.
+
+**4. Encapsulation:** Each class encapsulates its own data and behavior, making it easier to modify and extend the code.
+
+**5. Abstraction:** The Task class abstracts away the details of a task, making it easier to work with tasks without worrying about their implementation.
+
+**6. Inheritance:** Not used in this application, but could be used to create subclasses of Task for specific types of tasks.
+
+**7. Polymorphism:** Not used in this application, but could be used to create methods that can work with different types of tasks.
 
 **Classes and Methods**
 
@@ -29,12 +35,17 @@ This application uses the following design patterns and OOP concepts:
 
 **Task**
 
-**Constructor:** Initializes a task with a description, start time, end time, and priority.
-**getDescription:** Returns the task's description.
-**getStartTime:** Returns the task's start time.
-**getEndTime:** Returns the task's end time.
-**getPriority:** Returns the task's priority.
-**conflictsWith:** Checks if the task conflicts with another task.
+**1. Constructor:** Initializes a task with a description, start time, end time, and priority.
+
+**2. getDescription:** Returns the task's description.
+
+**3. getStartTime:** Returns the task's start time.
+
+**4. getEndTime:** Returns the task's end time.
+
+**5. getPriority:** Returns the task's priority.
+
+**5. conflictsWith:** Checks if the task conflicts with another task.
 
 **TaskFactory**
 
