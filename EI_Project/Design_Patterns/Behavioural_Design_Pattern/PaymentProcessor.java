@@ -1,4 +1,4 @@
-/*2. Strategy Pattern
+/*1. Strategy Pattern
 Use Case: Payment Gateway
 In this system, we have a payment gateway that supports multiple payment methods 
 (e.g., credit card, PayPal, and bank transfer). 
