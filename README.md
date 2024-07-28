@@ -8,6 +8,10 @@
 
 In this system, we have a payment gateway that supports multiple payment methods (e.g., credit card, PayPal, and bank transfer). We want to decouple the payment method from the payment processor to make it easier to add new payment methods in the future.
 
+**Output:**
+
+https://github.com/mahalakshmipp28/EI_Project_CSBS_TCE/blob/main/Payment_Gateway_1.png?raw=true
+
 **2. Observer Pattern**
 
 **Use Case: Weather Forecast System**
