@@ -1,4 +1,4 @@
-/*1. Factory Method Pattern
+/*2. Factory Method Pattern
 Use Case: Document Reader
 In this system, we have a document reader that supports multiple file formats 
 (e.g., PDF, DOCX, and TXT). 
