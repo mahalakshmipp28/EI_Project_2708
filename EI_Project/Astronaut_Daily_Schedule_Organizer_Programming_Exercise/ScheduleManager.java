@@ -1,50 +1,118 @@
-public class Task {
-    private final String description;
-    private final String startTime;
-    private final String endTime;
-    private final String priority;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
-    public Task(String description, String startTime, String endTime, String priority) {
-        this.description = description;
-        this.startTime = startTime;
-        this.endTime = endTime;
-        this.priority = priority;
+public class ScheduleManager {
+    private final List<Task> tasks;
+    private final TaskFactory taskFactory;
+
+    public ScheduleManager() {
+        tasks = new ArrayList<>();
+        taskFactory = new TaskFactory();
     }
 
-    public String getDescription() {
-        return description;
+    public void addTask(Task task) {
+        for (Task existingTask : tasks) {
+            if (task.conflictsWith(existingTask)) {
+                System.out.println("Error: Task conflicts with existing task \"" + existingTask.getDescription() + "\".");
+                return;
+            }
+        }
+        tasks.add(task);
+        System.out.println("Task added successfully. No conflicts.");
     }
 
-    public String getStartTime() {
-        return startTime;
+    public void removeTask(Task task) {
+        for (Task existingTask : tasks) {
+            if (existingTask.getDescription().equals(task.getDescription())) {
+                tasks.remove(existingTask);
+                System.out.println("Task removed successfully.");
+                return;
+            }
+        }
+        System.out.println("Error: Task not found.");
     }
 
-    public String getEndTime() {
-        return endTime;
+    public void viewTasks() {
+        if (tasks.isEmpty()) {
+            System.out.println("No tasks scheduled for the day.");
+            return;
+        }
+        Collections.sort(tasks, (t1, t2) -> {
+            int startHour1 = Integer.parseInt(t1.getStartTime().split(":")[0]);
+            int startMinute1 = Integer.parseInt(t1.getStartTime().split(":")[1]);
+            int startHour2 = Integer.parseInt(t2.getStartTime().split(":")[0]);
+            int startMinute2 = Integer.parseInt(t2.getStartTime().split(":")[1]);
+            if (startHour1 != startHour2) {
+                return startHour1 - startHour2;
+            } else {
+                return startMinute1 - startMinute2;
+            }
+        });
+        for (Task task : tasks) {
+            System.out.println(task.getStartTime() + " - " + task.getEndTime() + ": " + task.getDescription() + " [" + task.getPriority() + "]");
+        }
     }
 
-    public String getPriority() {
-        return priority;
+    public static void main(String[] args) {
+        ScheduleManager scheduleManager = new ScheduleManager();
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("1. Add task");
+            System.out.println("2. Remove task");
+            System.out.println("3. View tasks");
+            System.out.println("4. Exit");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // Consume newline left-over
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter task description: ");
+                    String description = scanner.nextLine();
+                    System.out.print("Enter start time (HH:mm): ");
+                    String startTime = scanner.nextLine();
+                    System.out.print("Enter end time (HH:mm): ");
+                    String endTime = scanner.nextLine();
+                    System.out.print("Enter priority (High/Medium/Low): ");
+                    String priority = scanner.nextLine();
+
+                    if (!isValidTime(startTime) || !isValidTime(endTime)) {
+                        System.out.println("Error: Invalid time format.");
+                        break;
+                    }
+
+                    Task task = scheduleManager.taskFactory.createTask(description, startTime, endTime, priority);
+                    scheduleManager.addTask(task);
+                    break;
+                case 2:
+                    System.out.print("Enter task description: ");
+                    description = scanner.nextLine();
+
+                    Task removeTask = scheduleManager.taskFactory.createTask(description, "", "", "");
+                    scheduleManager.removeTask(removeTask);
+                    break;
+                case 3:
+                    scheduleManager.viewTasks();
+                    break;
+                case 4:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
     }
 
-    public boolean conflictsWith(Task otherTask) {
-        int startHour = Integer.parseInt(startTime.split(":")[0]);
-        int startMinute = Integer.parseInt(startTime.split(":")[1]);
-        int endHour = Integer.parseInt(endTime.split(":")[0]);
-        int endMinute = Integer.parseInt(endTime.split(":")[1]);
-    
-        int otherStartHour = Integer.parseInt(otherTask.startTime.split(":")[0]);
-        int otherStartMinute = Integer.parseInt(otherTask.startTime.split(":")[1]);
-        int otherEndHour = Integer.parseInt(otherTask.endTime.split(":")[0]);
-        int otherEndMinute = Integer.parseInt(otherTask.endTime.split(":")[1]);
-    
-        // Convert time to minutes for easier comparison
-        int startMinutes = startHour * 60 + startMinute;
-        int endMinutes = endHour * 60 + endMinute;
-        int otherStartMinutes = otherStartHour * 60 + otherStartMinute;
-        int otherEndMinutes = otherEndHour * 60 + otherEndMinute;
-    
-        // Check for overlap
-        return (startMinutes < otherEndMinutes && endMinutes > otherStartMinutes);
+    private static boolean isValidTime(String time) {
+        String[] parts = time.split(":");
+        if (parts.length != 2) {
+            return false;
+        }
+        int hour = Integer.parseInt(parts[0]);
+        int minute = Integer.parseInt(parts[1]);
+        return hour >= 0 && hour < 24 && minute >= 0 && minute < 60;
     }
 }
